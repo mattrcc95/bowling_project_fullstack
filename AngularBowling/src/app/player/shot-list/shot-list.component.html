@@ -1,9 +1,16 @@
 
 <div class="container" style="margin-top: 2%; margin-bottom: 2%;">
     <div class="row">
+
       <div class="col">
-        <h4 style="text-align: center">PIE: regular, strike, spare percentage</h4>
+        <div class="chart">
+          <canvas baseChart [data]="this.pieChart.chartData" [labels]="this.pieChart.chartLabels"
+            [chartType]="this.pieChart.chartType" [colors]="this.pieChart.chartColors"
+            [options]="this.pieChart.chartOptions">
+          </canvas>
+        </div>
       </div>  
+      
       <div class="col-4">
         <table class="table">
           <thead>
@@ -26,8 +33,16 @@
           </tbody>
         </table>
       </div>
+
       <div class="col">
-        <h4 style="text-align: center">BAR CHART: hist of all shots</h4>
+        <div class="chart chart-bar">
+          <canvas baseChart [datasets]="this.barChart.barChartData"
+            [labels]="this.barChart.barChartLabels" [chartType]="this.barChart.barChartType"
+            [colors]="this.barChart.barChartColors" [options]="this.barChart.barChartOptions"
+            [legend]="this.barChart.barChartLegend">
+          </canvas>
+        </div>
       </div>
+
     </div>
   </div>
