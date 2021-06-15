@@ -1,0 +1,41 @@
+.scoreboard {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-column-gap: 3px;
+    background-color: #ffffff;
+}
+.flag {
+    border-radius: 4px;
+    min-height: 60px;
+    margin-bottom: 1%;
+    background-color: rgba(0, 221, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.score {
+    min-height: 80px;
+    border-radius: 4px;
+    background-color: rgba(226, 226, 226, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.strike {
+    border-radius: 4px;
+    min-height: 60px;
+    margin-bottom: 1%;
+    background-color: rgba(0, 255, 60, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spare {
+    border-radius: 4px;
+    min-height: 60px;
+    margin-bottom: 1%;
+    background-color: rgba(251, 255, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

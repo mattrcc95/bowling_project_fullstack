@@ -1,0 +1,33 @@
+
+<div class="container" style="margin-top: 2%; margin-bottom: 2%;">
+    <div class="row">
+      <div class="col">
+        <h4 style="text-align: center">PIE: regular, strike, spare percentage</h4>
+      </div>  
+      <div class="col-4">
+        <table class="table">
+          <thead>
+            <th>ID</th>
+            <th>shot1</th>
+            <th>shot2</th>
+            <th>shot3</th>
+            <th>flag</th>
+            <th>score</th>
+          </thead>
+          <tbody>
+            <tr *ngFor="let frame of DBinfos">
+              <td>{{frame.id}}</td>
+              <td>{{frame.shot1}}</td>
+              <td>{{frame.shot2}}</td>
+              <td>{{frame.shot3}}</td>
+              <td>{{frame.flag}}</td>
+              <td>{{frame.score}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col">
+        <h4 style="text-align: center">BAR CHART: hist of all shots</h4>
+      </div>
+    </div>
+  </div>
